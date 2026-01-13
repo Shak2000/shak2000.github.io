@@ -33,6 +33,48 @@ body {
     padding: 32px 16px;
 }
 
+/* Breadcrumb Navigation */
+.breadcrumb {
+    margin-bottom: 24px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb a {
+    color: var(--text-link);
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Page Header */
+.page-header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.page-header .page-description {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 /* Profile Header */
 .profile-header {
     display: flex;
@@ -238,6 +280,59 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Data Visualizations */
+.visualizations {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.viz-item {
+    margin-bottom: 48px;
+    padding: 24px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.viz-item:last-child {
+    margin-bottom: 0;
+}
+
+.viz-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.viz-item h3 a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+.viz-item h3 a:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+}
+
+.tableau-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.tableau-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Responsive Design */

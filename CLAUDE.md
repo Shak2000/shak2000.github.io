@@ -29,9 +29,10 @@ For Jekyll sites (if using):
 
 ## Repository Structure
 
-This is a static HTML/CSS portfolio site that mirrors the GitHub profile page:
+This is a static HTML/CSS portfolio site:
 - `index.html` - Main portfolio page with profile info, experience, skills, and projects
-- `styles.css` - GitHub-inspired dark theme styling
+- `tableau.html` - Separate page showcasing Tableau data visualization projects
+- `styles.css` - Light theme styling with responsive design
 - Profile avatar is loaded directly from GitHub: `https://github.com/shak2000.png`
 
 ## Content Updates
@@ -40,7 +41,8 @@ When updating the portfolio content:
 - Personal info, bio, and links are in the profile header section of `index.html`
 - Professional experience is in the `.experience` section
 - Technical skills are organized by category in the `.skills` section
-- Pinned repositories are in the `.repo-grid` section with links to actual GitHub repos
+- Projects section includes links to GitHub repos and the Tableau projects page
+- Tableau visualizations are embedded in `tableau.html` using iframes
 - The site uses Font Awesome icons (CDN) for visual elements
 
 ## Styling

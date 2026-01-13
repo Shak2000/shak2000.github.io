@@ -14,9 +14,10 @@ Visit the live site at: **[https://shak2000.github.io](https://shak2000.github.i
 
 - **Professional Experience**: Details about my work at Pack Ventures, ShelterApp, Council Data Project, and Non-Trivial
 - **Technical Skills**: Comprehensive list of programming languages, frameworks, databases, and tools I work with
-- **Projects**: Showcase of my main projects including Algorithmic Game Solvers and AI Knowledge Games
+- **Projects**: Showcase of my main projects including Algorithmic Game Solvers, AI Knowledge Games, and Tableau visualizations
+- **Tableau Projects Page**: Dedicated page with embedded interactive data visualizations
 - **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
-- **Clean UI**: Light theme with GitHub-inspired styling
+- **Clean UI**: Light theme with professional styling
 
 ## Technologies Used
 
@@ -49,7 +50,8 @@ To view the site locally:
 
 ```
 .
-├── index.html          # Main HTML file with content
+├── index.html          # Main portfolio page
+├── tableau.html        # Tableau data visualizations page
 ├── styles.css          # Styling and responsive design
 ├── README.md           # This file
 ├── CLAUDE.md           # Documentation for Claude Code
