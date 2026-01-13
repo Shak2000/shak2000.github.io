@@ -1,0 +1,418 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-tertiary: #21262d;
+    --border-color: #30363d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --text-link: #58a6ff;
+    --text-link-hover: #79c0ff;
+    --accent-color: #238636;
+    --badge-bg: #161b22;
+    --badge-border: #30363d;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-avatar img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+
+.profile-info {
+    flex: 1;
+    padding-top: 8px;
+}
+
+.profile-info h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.username {
+    font-size: 20px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.bio {
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.profile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.profile-meta .location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.profile-meta .link {
+    color: var(--text-link);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+.profile-meta .link:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar section {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Achievements */
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: var(--bg-tertiary);
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.achievement i {
+    color: var(--accent-color);
+    font-size: 16px;
+}
+
+/* Stats */
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.stat-item i {
+    color: var(--text-secondary);
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content section {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-content h2 i {
+    color: var(--text-secondary);
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.experience-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.experience-item .duration {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.experience-item .description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Skills */
+.skill-category {
+    margin-bottom: 24px;
+}
+
+.skill-category:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--badge-bg);
+    border: 1px solid var(--badge-border);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.badge:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--text-secondary);
+}
+
+/* Pinned Repositories */
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 16px;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.2s;
+    height: 100%;
+}
+
+.repo-card:hover {
+    border-color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+}
+
+.repo-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.repo-header i {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.repo-header h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-link);
+}
+
+.repo-card:hover .repo-header h3 {
+    text-decoration: underline;
+}
+
+.repo-description {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.repo-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lang-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lang-dot.js {
+    background-color: #f1e05a;
+}
+
+.lang-dot.python {
+    background-color: #3572a5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 48px;
+}
+
+footer a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .main-content {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-meta {
+        justify-content: center;
+    }
+
+    .repo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-avatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-info h1 {
+        font-size: 22px;
+    }
+
+    .username {
+        font-size: 18px;
+    }
+
+    .main-content section {
+        padding: 16px;
+    }
+}
