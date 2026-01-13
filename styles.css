@@ -103,63 +103,7 @@ body {
 
 /* Content Grid */
 .content-grid {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 24px;
-}
-
-/* Sidebar */
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.sidebar section {
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    padding: 16px;
-}
-
-.sidebar h2 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-/* Achievements */
-.achievement-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.achievement {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px;
-    background-color: var(--bg-tertiary);
-    border-radius: 6px;
-    font-size: 13px;
-}
-
-.achievement i {
-    color: var(--accent-color);
-    font-size: 16px;
-}
-
-/* Stats */
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-}
-
-.stat-item i {
-    color: var(--text-secondary);
+    display: block;
 }
 
 /* Main Content */
@@ -257,17 +201,17 @@ body {
     border-color: var(--text-secondary);
 }
 
-/* Pinned Repositories */
+/* Projects */
 .repo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
 }
 
 .repo-card {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 20px;
     background-color: var(--bg-tertiary);
     border: 1px solid var(--border-color);
     border-radius: 6px;
@@ -275,6 +219,7 @@ body {
     color: var(--text-primary);
     transition: all 0.2s;
     height: 100%;
+    min-height: 200px;
 }
 
 .repo-card:hover {
@@ -305,17 +250,30 @@ body {
 }
 
 .repo-description {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--text-secondary);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     flex: 1;
+    line-height: 1.6;
 }
 
 .repo-footer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
     font-size: 12px;
+}
+
+.repo-stats {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-secondary);
+}
+
+.repo-stats i {
+    font-size: 11px;
 }
 
 .language {
@@ -359,20 +317,6 @@ footer a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .content-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        order: 2;
-    }
-
-    .main-content {
-        order: 1;
-    }
-}
-
 @media (max-width: 768px) {
     .profile-header {
         flex-direction: column;
