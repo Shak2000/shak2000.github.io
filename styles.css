@@ -153,12 +153,12 @@ body {
 }
 
 .experience-item h3 a {
-    color: var(--text-primary);
+    color: var(--text-link);
     text-decoration: none;
 }
 
 .experience-item h3 a:hover {
-    color: var(--text-link);
+    color: var(--text-link-hover);
     text-decoration: underline;
 }
 
