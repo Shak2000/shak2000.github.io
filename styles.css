@@ -6,17 +6,17 @@
 }
 
 :root {
-    --bg-primary: #0d1117;
-    --bg-secondary: #161b22;
-    --bg-tertiary: #21262d;
-    --border-color: #30363d;
-    --text-primary: #c9d1d9;
-    --text-secondary: #8b949e;
-    --text-link: #58a6ff;
-    --text-link-hover: #79c0ff;
-    --accent-color: #238636;
-    --badge-bg: #161b22;
-    --badge-border: #30363d;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f6f8fa;
+    --bg-tertiary: #ffffff;
+    --border-color: #d0d7de;
+    --text-primary: #24292f;
+    --text-secondary: #57606a;
+    --text-link: #0969da;
+    --text-link-hover: #0550ae;
+    --accent-color: #1a7f37;
+    --badge-bg: #f6f8fa;
+    --badge-border: #d0d7de;
 }
 
 body {
@@ -152,6 +152,16 @@ body {
     margin-bottom: 6px;
 }
 
+.experience-item h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.experience-item h3 a:hover {
+    color: var(--text-link);
+    text-decoration: underline;
+}
+
 .experience-item .duration {
     font-size: 13px;
     color: var(--text-secondary);
@@ -161,6 +171,15 @@ body {
 .experience-item .description {
     font-size: 14px;
     line-height: 1.6;
+}
+
+.experience-item .description a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+.experience-item .description a:hover {
+    text-decoration: underline;
 }
 
 /* Skills */
@@ -201,101 +220,6 @@ body {
     border-color: var(--text-secondary);
 }
 
-/* Projects */
-.repo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-}
-
-.repo-card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: var(--bg-tertiary);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: all 0.2s;
-    height: 100%;
-    min-height: 200px;
-}
-
-.repo-card:hover {
-    border-color: var(--text-secondary);
-    background-color: var(--bg-secondary);
-}
-
-.repo-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-
-.repo-header i {
-    color: var(--text-secondary);
-    font-size: 16px;
-}
-
-.repo-header h3 {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text-link);
-}
-
-.repo-card:hover .repo-header h3 {
-    text-decoration: underline;
-}
-
-.repo-description {
-    font-size: 13px;
-    color: var(--text-secondary);
-    margin-bottom: 16px;
-    flex: 1;
-    line-height: 1.6;
-}
-
-.repo-footer {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    font-size: 12px;
-}
-
-.repo-stats {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    color: var(--text-secondary);
-}
-
-.repo-stats i {
-    font-size: 11px;
-}
-
-.language {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.lang-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.lang-dot.js {
-    background-color: #f1e05a;
-}
-
-.lang-dot.python {
-    background-color: #3572a5;
-}
 
 /* Footer */
 footer {
@@ -331,10 +255,6 @@ footer a:hover {
 
     .profile-meta {
         justify-content: center;
-    }
-
-    .repo-grid {
-        grid-template-columns: 1fr;
     }
 
     .container {
