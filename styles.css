@@ -224,6 +224,11 @@ body {
     text-decoration: underline;
 }
 
+.experience-item ul.description {
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+
 /* Skills */
 .skill-category {
     margin-bottom: 24px;
